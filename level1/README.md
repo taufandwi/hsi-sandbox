@@ -121,6 +121,10 @@ Lihat direktori `contoh_kode` untuk contoh penggunaan sintaks dasar dan tipe dat
    - Input: `"hello"`
    - Output: `false` (karena "hello" tidak sama jika dibaca terbalik)
 
+3. `Pencarian Bilangan Paling Besar` Buat program untuk mencari bilangan terbesar dalam sebuah slice (array dinamis) dari bilangan bulat.
+- Contoh:
+   - Input: `[3, 5, 2, 8, 1]`
+   - Output: `8` (karena 8 adalah bilangan terbesar dalam slice tersebut)
 
 Direktori `latihan` berisi latihan untuk memperkuat pemahaman Anda tentang materi di level ini.
 
