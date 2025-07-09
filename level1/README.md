@@ -92,17 +92,6 @@ Selamat datang di Level 1 **HSI - Golang Sandbox**! Pada level ini, Anda akan me
 
 ---
 
-## Tujuan Pembelajaran
-
-Setelah menyelesaikan level ini, Anda diharapkan mampu:
-- Mendeklarasikan dan menginisialisasi variabel serta konstanta.
-- Menggunakan struktur kontrol dasar untuk mengatur alur program.
-- Menulis program Go sederhana dengan konsep di atas.
-
-## Contoh Kode
-
-Lihat direktori `contoh_kode` untuk contoh penggunaan sintaks dasar dan tipe data.
-
 ## Latihan
 
 1. `Perhitungan Faktorial (Factorial Calculation)` Diberikan sebuah bilangan bulat non-negatif n, tulis algoritma untuk menghitung faktorialnya. Faktorial dari n (dilambangkan sebagai n!) adalah hasil perkalian semua bilangan bulat positif yang kurang dari atau sama dengan n.
@@ -126,8 +115,5 @@ Lihat direktori `contoh_kode` untuk contoh penggunaan sintaks dasar dan tipe dat
    - Input: `[3, 5, 2, 8, 1]`
    - Output: `8` (karena 8 adalah bilangan terbesar dalam slice tersebut)
 
-Direktori `latihan` berisi latihan untuk memperkuat pemahaman Anda tentang materi di level ini.
-
-Setelah memahami materi ini, lanjutkan ke Level 2 untuk mempelajari fungsi dan penanganan error.
 
 Selamat belajar!
