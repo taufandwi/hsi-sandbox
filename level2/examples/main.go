@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"runtime/debug"
 )
 
 // divide performs division and might panic if denominator is zero.
 func divide(a, b int) int {
 	// This deferred function will be executed if a panic occurs in `divide`.
 	// It attempts to recover the panic.
-	/*defer func() {
+	defer func() {
 		if r := recover(); r != nil {
 			// A panic was recovered!
 			fmt.Printf("\n--- Recovered from panic in divide() ---\n")
@@ -17,13 +18,15 @@ func divide(a, b int) int {
 			fmt.Printf("Stack Trace:\n%s\n", debug.Stack())
 			fmt.Printf("--- End of recover in divide() ---\n\n")
 		}
-	}()*/
+	}()
+	// sama seperti try catch di java atau bahasa lain
 
 	fmt.Printf("Attempting to divide %d by %d...\n", a, b)
 	if b == 0 {
 		// Panic if the denominator is zero.
 		// This is an unrecoverable error for this specific division operation.
-		panic("denominator cannot be zero")
+		panic("denominator cannot be zero") // fmt.errorf("denominator cannot be zero")
+
 	}
 	result := a / b
 	fmt.Printf("Division successful: %d / %d = %d\n", a, b, result)
