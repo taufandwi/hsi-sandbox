@@ -29,15 +29,12 @@
     1. Navigate to your project directory.
     2. Run `go mod init <module-name>` to create a new module.
     3. Add dependencies using `go get <package>`.
-  4. Use `go mod tidy` to clean up unused dependencies.
-  5. Use `go build` to compile your module, which will automatically download dependencies.
-  6. Use `go run .` to run your module directly.
-  7. Use `go test` to run tests in your module.
-  8. Use `go list` to list all packages in your module.
-  9. Use `go mod verify` to check that dependencies have not been modified.
-  10. Use `go mod edit` to edit the `go.mod` file directly.
-  11. Use `go mod graph` to visualize the dependency graph of your module.
-  12. Use `go mod why` to understand why a dependency is included in your module.
+    4. Use `go mod tidy` to clean up unused dependencies.
+    5. Use `go list` to list all packages in your module.
+    6. Use `go mod verify` to check that dependencies have not been modified.
+    7. Use `go mod edit` to edit the `go.mod` file directly.
+    8. Use `go mod graph` to visualize the dependency graph of your module.
+    9. Use `go mod why` to understand why a dependency is included in your module.
 
 --
 
