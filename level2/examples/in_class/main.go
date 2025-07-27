@@ -86,6 +86,22 @@ func getEmployeeName() (name []*string, err error) {
 	return nil, nil
 }
 
+// other function params
+func getName(name string, age int, isActive ...bool) (string, int, bool) {
+	// isActive is a variadic parameter, it can accept zero or more than one boolean values
+	return name, age, isActive[0] // if isActive is empty, this will cause a panic
+}
+
+func getName2(name string, age int, isActive bool) (string, int, bool) {
+	return name, age, isActive
+}
+
+func returnError() (err error) {
+	// this function will return an error
+	err = fmt.Errorf("this is an error")
+	return
+}
+
 func main() {
 	maxValue := GetMax(10, 20)
 
@@ -178,5 +194,19 @@ func main() {
 
 	tempAngka = 20
 	fmt.Println("cekAngka is still not nil, value is :: ", *cekAngka)
+
+	// example call new function
+	//name, age := getName("Charles", 20, true, false, true)
+
+	//name2, age2 := getName2("Charles", 20, true)
+
+	if err = returnError(); err != nil {
+		fmt.Println("error:", err)
+	}
+	// above is equivalent to:
+	err = returnError()
+	if err != nil {
+		fmt.Println("error:", err)
+	}
 
 }

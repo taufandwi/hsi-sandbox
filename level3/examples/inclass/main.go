@@ -128,6 +128,19 @@ func main() {
 
 	fmt.Printf("Order JSON: %s\n", jsonOrder)
 
+	// print struct with json tag part 2
+	order2 := Order{
+		OrderID:    "12345",
+		CustomerID: "67890",
+	}
+
+	jsonOrder2, err := json.Marshal(order2)
+	if err != nil {
+		panic(err)
+	}
+
+	fmt.Printf("Order2 JSON: %s\n", jsonOrder2)
+
 }
 
 // example struct with json tag part 2

@@ -1,43 +1,24 @@
 package main
 
-import (
-    "fmt"
-    "testing"
-)
+import "fmt"
 
-// Function to add two integers
-func Add(a int, b int) int {
-    return a + b
-}
-
-// Test for the Add function
-func TestAdd(t *testing.T) {
-    result := Add(2, 3)
-    expected := 5
-    if result != expected {
-        t.Errorf("Add(2, 3) = %d; want %d", result, expected)
-    }
-}
-
-// Function to subtract two integers
-func Subtract(a int, b int) int {
-    return a - b
-}
-
-// Test for the Subtract function
-func TestSubtract(t *testing.T) {
-    result := Subtract(5, 3)
-    expected := 2
-    if result != expected {
-        t.Errorf("Subtract(5, 3) = %d; want %d", result, expected)
-    }
-}
-
-// Main function to run tests
 func main() {
-    fmt.Println("Running tests...")
-    testing.Main(func(pat, str string) (bool, error) { return true, nil }, []testing.InternalTest{
-        {"TestAdd", TestAdd},
-        {"TestSubtract", TestSubtract},
-    }, nil, nil)
+	inputText := "aabbaa" // Change this to test different strings
+
+	n := len(inputText)
+
+	isPalindrome := true
+
+	for i := 0; i < n/2; i++ {
+		if inputText[i] != inputText[n-1-i] {
+			isPalindrome = false
+			break
+		}
+	}
+
+	if isPalindrome {
+		fmt.Println(inputText, "is a palindrome text")
+	} else {
+		fmt.Println(inputText, "is not a palindrome text")
+	}
 }

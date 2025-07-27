@@ -39,18 +39,12 @@
   11. Use `go mod graph` to visualize the dependency graph of your module.
   12. Use `go mod why` to understand why a dependency is included in your module.
 
----
-
-## Studi Kasus
-
-- **Sistem Logging**: Implementasi interface untuk berbagai strategi logging (misal: ke konsol, ke file).
-- **Pembayaran**: Sistem pembayaran dengan berbagai metode yang mengimplementasikan interface yang sama.
+--
 
 ## Latihan
 
-1. Buat interface `Hewan` dengan method `Bersuara()` dan `Bergerak()`. Implementasikan pada struct `Anjing` dan `Kucing`.
-2. Buat fungsi yang menerima interface `Hewan` dan memanggil method `Bersuara()`.
-3. Buat interface `Bentuk` dengan method `Luas()` dan `Keliling()`. Implementasikan pada struct `PersegiPanjang` dan `Lingkaran`.
+1. Dari Project minggu ke-3, buatlah sebuah package baru yang berisi fungsi-fungsi yang berada pada file `main.go` yang telah Anda buat. 
+Pastikan fungsi-fungsi tersebut dapat diakses dari package lain.
 
 Setelah menyelesaikan level ini, Anda akan memahami cara mendefinisikan dan menggunakan interface di Go.
 
