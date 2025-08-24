@@ -85,18 +85,22 @@ func main() {
 	//}
 
 	// if else statement
+	// jika
 	// operators: ==, !=, <, >, <=, >=
-	// logical operators: &&, ||, !
+	// logical operators: && all true, || salah satu, !
 	angka = -10
-	if angka > 10 && unsignedAngka > 0 {
+	if angka <= 10 && angka >= -10 || angka == 0 {
 		if unsignedAngka > 1000 {
 			fmt.Println("Angka lebih besar dari 1000")
 		} else {
 			fmt.Println("Angka kurang dari atau sama dengan 1000")
 		}
 		fmt.Println("Angka lebih besar dari 0")
-	} else if angka < 0 {
+
+	} else if (angka < 0 && angka > -10) || angka == 0 {
 		fmt.Println("Angka negatif")
+	} else {
+		fmt.Println("default case")
 	}
 
 	if !isTrue {
@@ -107,6 +111,7 @@ func main() {
 	fmt.Println("switch statement example ::")
 
 	angka = 15
+
 	switch angka {
 	case 5:
 		fmt.Println("Angka adalah 5")
@@ -121,8 +126,18 @@ func main() {
 	// for loop
 	fmt.Println("")
 	fmt.Println("for loop example ::")
-	for i := 0; i < 20; i++ {
+
+	// i := 0 inisialisasi variabel i
+	// for (inisisi);(statement berjalannya sebuah perulangan):(increment) {}
+	// i++ equal dengan i = i + 1
+	// i + 1 , nilainya tidak masuk kedalam variabel i
+
+	for i := 0; i < 20; i = i + 2 {
 		fmt.Println("Perulangan ke-", i)
+	}
+
+	for i, j := 0, 10; i < 10 && j > 0; i, j = i+1, j-1 {
+		fmt.Println("Perulangan ke-", i, "dan j adalah", j)
 	}
 
 	// for each loop
